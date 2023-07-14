@@ -1,11 +1,13 @@
 #include <stdio.h>
 
 /**
-* Description: print into the oupt using puts function
-*/
+ * main - output to the standard output
+ * Description: this function print to the standard output using puts function
+ * Return: this function return 0, to stop the execution of the programme
+ */
 
 int	main(void)
 {
-	puts("Programming is like building a multilingual puzzle\n");
+	puts("\"Programming is like building a multilingual puzzle\n");
 	return (0);
 }
