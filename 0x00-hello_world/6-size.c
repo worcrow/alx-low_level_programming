@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 /**
- * main - output the size of types 
- * Description: print the various size type to the standard output
+ * main - output the size of types
+ * Description: print the size type to the standard output
  * Return: this function return 0, to stop the execution of the programme
  */
 
