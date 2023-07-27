@@ -1,3 +1,4 @@
+#include <stdio.h>
 /**
  *is_separator - check if the charactere is a separator
  *@c: the charcatere variable
@@ -42,8 +43,6 @@ char *cap_string(char *str)
 		str[i++] -= 32;
 	while (str[i] != '\0')
 	{
-		if (str[i] == '\t')
-			str[i] = ' ';
 		if (is_separator(str[i - 1]) && is_lower(str[i]))
 			str[i] -= 32;
 		i++;
