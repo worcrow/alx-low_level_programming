@@ -8,7 +8,7 @@
 
 char *leet(char *str)
 {
-	int index1,index2;
+	int index1, index2;
 	int enc_var[8] = {'O', 'L', '?', 'E', 'A', '?', '?', 'T'};
 
 	index1 = 0;
