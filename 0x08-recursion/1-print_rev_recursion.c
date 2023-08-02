@@ -7,7 +7,7 @@
 
 void _print_rev_recursion(char *s)
 {
-	char tem; /* temporary variable to strore the first chararctere of s */
+	char temp; /* temporary variable to strore the first chararctere of s */
 
 	if (*s != '\0')
 	{
