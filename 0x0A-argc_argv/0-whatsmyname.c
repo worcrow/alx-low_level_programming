@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  *main - print the name of the program
  *@argc: argument count
@@ -7,6 +8,7 @@
 */
 int main(int argc, char *argv[])
 {
-	_puts(argv[argc - 1]);
+	if (argc > 0)
+		printf("%s", argv[0]);
 	return (0);
 }
