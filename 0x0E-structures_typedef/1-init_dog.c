@@ -8,10 +8,9 @@
  * @owner: A string pointer to the dog owner's name
  *
  * Return: void
- */
+*/
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
-	/*A pointer has already been passed, we do not need to create again*/
 	if (d == NULL)
 		return;
 	if (name == NULL)
