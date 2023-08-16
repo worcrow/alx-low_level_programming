@@ -1,24 +1,22 @@
-#include <stdlib.h>
 #include "dog.h"
 #include "main.h"
 
 /**
- * init_dog - initialize a variable of type dog
- * @d: pointer to the dog struct
- * @name: name to be filled
- * @age: age to be filled
- * @owner: owner name to be filled
-*/
-
+ * init_dog - Initializes a variable of type struct dog
+ * @d: A pointer to the struct instance being initialized
+ * @name: A string pointer to the dog's name
+ * @age: A float value of the dog's age
+ * @owner: A string pointer to the dog owner's name
+ *
+ * Return: void
+ */
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
-	d = malloc(sizeof(struct dog));
+	/*A pointer has already been passed, we do not need to create again*/
 	if (d == NULL)
-	{
 		return;
-	}
+
 	d->name = name;
 	d->age = age;
 	d->owner = owner;
 }
-
