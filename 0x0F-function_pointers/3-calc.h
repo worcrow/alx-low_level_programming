@@ -1,6 +1,10 @@
 #ifndef HEADER_H
 #define HEADER_H
-#define NULL ((void *)0)
+/*#define NULL ((void *)0)*/
+#include <stdlib.h>
+#include<string.h>
+#include <stdarg.h>
+#include <stdio.h>
 /**
  * struct op - struct hold the type of the operator and function for that type
  * @op: The operator
