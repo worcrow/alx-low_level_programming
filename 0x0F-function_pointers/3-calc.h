@@ -1,5 +1,6 @@
 #ifndef HEADER_H
 #define HEADER_H
+#define NULL ((void *)0)
 /**
  * struct op - struct hold the type of the operator and function for that type
  * @op: The operator
