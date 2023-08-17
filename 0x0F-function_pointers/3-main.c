@@ -24,12 +24,11 @@ int main(int argc, char *argv[])
 	op = argv[argc - 2];
 	b  = atoi(argv[argc - 1]);
 
-	if (*op != '+' && *op != '-' && *op != '*' && *op != '/' && *op != '%')
+	if (get_op_func(op) == NULL || op[1] != '\0')
 	{
 		printf("Error\n");
 		exit(99);
 	}
-
 	if ((*op == '/' || *op == '%') && b == 0)
 	{
 		printf("Error\n");
