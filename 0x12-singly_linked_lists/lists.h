@@ -6,7 +6,7 @@
  * struct linked_list - define the structure for the linked list
  * @str: string to be stored in the linked list
  * @len: the length of the str
- * @new: pointer to the next node
+ * @next: pointer to the next node
 */
 	typedef struct linked_list
 	{
