@@ -34,6 +34,7 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 				temp->next = new_node;
 				break;
 			}
+			temp = temp->next;
 		}
 	}
 	return (count > idx ? NULL : new_node);
