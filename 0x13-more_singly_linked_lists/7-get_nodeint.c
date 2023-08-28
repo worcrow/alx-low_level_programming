@@ -22,5 +22,5 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 	}
 	if (count == (unsigned int) -1 || count > index)
 		return (NULL);
-	return temp;
+	return (temp);
 }
