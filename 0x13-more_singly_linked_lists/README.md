@@ -1,4 +1,4 @@
 
 # 0x13. C - More singly linked lists
 
-<p width='20' height='20' color='red'>C</p>
+<p style=" width: 30px; height: 20px; border-radius: 5px; background-color: red; text-align:center;">C</p>
