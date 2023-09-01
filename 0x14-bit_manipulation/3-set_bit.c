@@ -9,18 +9,8 @@
 
 int set_bit(unsigned long int *n, unsigned int index)
 {
-	unsigned int idx;
-
 	if (index > 63 || n == NULL)
 		return (-1);
-	for (idx = 0; idx < index; idx++)
-	{
-		*n = (*n) >> 1;
-	}
-	(*n)++;
-	for (idx = 0; idx < index; idx++)
-	{
-		*n = (*n) << 1;
-	}
+	*n = (((*n) >> index) + 1) << index;
 	return (1);
 }
