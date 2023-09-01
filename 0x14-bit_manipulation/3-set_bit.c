@@ -12,7 +12,7 @@ int set_bit(unsigned long int *n, unsigned int index)
 	if (index > 63 || n == NULL)
 		return (-1);
 	/**
-		*n = (*n) >> index;
+		*n = (*n) >> index; This method pass all test except test 5
 		if (((*n) & 1) == 0)
 			(*n)++;
 		*n = (*n) << index;
