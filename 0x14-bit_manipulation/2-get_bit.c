@@ -33,7 +33,7 @@ int get_bit(unsigned long int n, unsigned int index)
 	unsigned int len;
 
 	len = convert_to_binary(n, arr);
-	if (index > 63)
+	if (index >= len && index > 63)
 		return (-1);
 	return (arr[index]);
 }
