@@ -21,7 +21,8 @@ int main(int argc, char *argv[])
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 		exit(98);
 	}
-	fd2 = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH);
+	fd2 = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, S_IRUSR | S_IWUSR |
+			S_IRGRP | S_IWGRP | S_IROTH);
 	if (fd2 == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
@@ -31,10 +32,10 @@ int main(int argc, char *argv[])
 	{
 		flag_read = read(fd1, buff, 1024);
 		if (flag_read == -1)
-			{
-				dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
-				exit(98);
-			}
+		{
+			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
+			exit(98);
+		}
 		flag_write = write(fd2, buff, flag_read);
 		if (flag_write < flag_read)
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]), exit(99);
